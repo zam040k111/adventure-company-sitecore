@@ -1,0 +1,12 @@
+﻿@model Adventure.Feature.Navigation.Models.BreadcrumbNavigationViewModel
+
+<div class="container">
+    <ol class="breadcrumb">
+        @foreach (var item in Model.NavItems)
+        {
+            <li class="breadcrumb-item">
+                <a href="@item.Url">@item.Name</a>
+            </li>
+        }
+    </ol>
+</div>

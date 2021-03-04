@@ -1,0 +1,22 @@
+﻿---
+ID: "81b5289e-95db-4485-92fc-63fade45ac54"
+Parent: "2c644806-2c46-4677-bbf8-56238343ab06"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Event Details Workflow/Draft/Request Review
+DB: master
+SharedFields:
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{CF099CAC-E8CE-42FE-89C8-A415917723BF}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Content Editor|pe|+workflowCommand:execute|+workflowState:write|pd|+workflowCommand:execute|+workflowState:write|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T121320Z

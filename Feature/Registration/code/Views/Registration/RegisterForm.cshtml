@@ -1,0 +1,57 @@
+﻿@using Adventure.Feature.Registration.Enums
+@using Glass.Mapper.Sc.Web.Mvc
+@model Adventure.Feature.Registration.Models.RegistrationPageViewModel
+
+@Model.AssetsService.RenderStyles()
+<div>
+	@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+	{
+		<div class="font-weight-bold">Validation messages</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordContainsNoNumberMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordContainsNoUpperCaseMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordContainsNoLowerCaseMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordContainsNoSpecialMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordLengthMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.PasswordRequiredMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.EmailFormatMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.EmailRequiredMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.UserNameLengthMessage))</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.UserNameRequiredMessage)</div>
+		<div>@Html.Glass().Editable(x => x.RegistrationPage.UserNameIsNotUniqueMessage)</div>
+		<div class="mb-4">@Html.Glass().Editable(x => x.RegistrationPage.ConfirmPassword)</div>
+	}
+
+	<div class="text-danger">
+		<ul id="validation-container">
+			<li class="d-none" id="@NewUserValidationMessages.NoNumberInPasswordMessage">@Model.RegistrationPage.PasswordContainsNoNumberMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.NoUpperCaseInPasswordMessage">@Model.RegistrationPage.PasswordContainsNoUpperCaseMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.NoLowerCaseInPasswordMessage">@Model.RegistrationPage.PasswordContainsNoLowerCaseMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.NoSpecialCharacterInPasswordMessage">@Model.RegistrationPage.PasswordContainsNoSpecialMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.PasswordLengthMessage">@Model.RegistrationPage.PasswordLengthMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.PasswordRequiredMessage">@Model.RegistrationPage.PasswordRequiredMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.EmailInvalidFormatMessage">@Model.RegistrationPage.EmailFormatMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.EmailRequiredMessage">@Model.RegistrationPage.EmailRequiredMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.EmailNotUniqueMessage">@Model.RegistrationPage.EmailUniqueMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.UserNameLengthMessage">@Model.RegistrationPage.UserNameLengthMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.UserNameRequiredMessage">@Model.RegistrationPage.UserNameRequiredMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.UserNameNotUnique">@Model.RegistrationPage.UserNameIsNotUniqueMessage</li>
+			<li class="d-none" id="@NewUserValidationMessages.ConfirmPassword">@Model.RegistrationPage.ConfirmPassword</li>
+		</ul>
+	</div>
+
+	<div class="text-success d-none" id="success-register-container">@Model.RegistrationPage.SuccessfulRegistrationMessage</div>
+	<div class="text-success d-none" id="email-sent-container">@Model.RegistrationPage.EmailSentMessage</div>
+	<div class="text-danger d-none" id="failed-register-container">@Model.RegistrationPage.UnsuccessfulRegistrationMessage</div>
+
+
+	<div id="registration-input-list">
+		<input type="text" class="form-control mb-3" placeholder="@RenderingContext.Current.Rendering.Parameters["UserName"]" id="UserName" />
+		<input type="text" class="form-control mb-3" placeholder="@RenderingContext.Current.Rendering.Parameters["Email"]" id="Email" />
+		<input type="password" class="form-control mb-3" placeholder="@RenderingContext.Current.Rendering.Parameters["Password"]" id="Password" />
+		<input type="password" class="form-control mb-3" placeholder="@RenderingContext.Current.Rendering.Parameters["ConfirmPassword"]" id="PasswordConfirmation" />
+		<input type="hidden" value="@Model.DataSourceId" id="DataSourceId" />
+		<button id="register-user-button" class="btn btn-dark">@Html.Glass().Editable(x => x.RegistrationPage.SubmitButtonText)</button>
+	</div>
+</div>
+
+@Model.AssetsService.RenderScript()

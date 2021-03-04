@@ -1,0 +1,8 @@
+{
+  "generator-helix": {
+    "promptValues": {
+      "sourceFolder": "",
+      "target": "v4.7.1"
+    }
+  }
+}

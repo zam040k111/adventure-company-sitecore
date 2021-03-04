@@ -1,0 +1,18 @@
+﻿---
+ID: "b51868d7-da1f-4bdd-8f32-6b2a178c0419"
+Parent: "1ecc3c9a-8760-4673-94fb-9162bff395c5"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Dictionary/Feature/Login/Messages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201221T115143Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

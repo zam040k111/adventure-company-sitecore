@@ -1,0 +1,104 @@
+﻿---
+ID: "9defdc36-75ae-4d0d-906e-fad018cdf18e"
+Parent: "972331df-cdab-4e63-92b6-401453793800"
+Template: "72b40e48-a2b6-4ddf-be66-ad0911f53f75"
+Path: /sitecore/content/Adventure/Home/Climbing List/Fantastic hike to Carpathians n2024933953
+DB: master
+SharedFields:
+- ID: "a4f985d9-98b3-4b52-aaaf-4344f6e747c6"
+  Hint: __Workflow
+  Value: "{F9F6DE61-BA86-41F3-B10B-036D2AA0438F}"
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: <tracking />
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23a213e8-4b53-4e63-8ca6-309d0e88db5a"
+      Hint: StartDate
+      Value: 20210221T140055Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210125T140055Z
+    - ID: "3986d092-0659-41f4-9d38-072639a93098"
+      Hint: ButtonText
+      Value: Press Here Better
+    - ID: "50911beb-2fa0-4b2f-bb02-7c014fa793f2"
+      Hint: Title
+      Value: Fantastic hike to Carpathians
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous
+    - ID: "7b440603-9dc7-45a4-9935-94ea995e005a"
+      Hint: ShortDescription
+      Value: Traveling is very popular nowadays. Mount Everest is the highest peak in the world and is located in the Himalayas. The hotel offers cozy comfortable double rooms and superior rooms that meet European standards.
+    - ID: "9bdeb640-bb42-456c-a7e9-6fcf76ba9f93"
+      Hint: Difficulty
+      Value: 3
+    - ID: "a0cff737-944a-43ef-9fa8-810d54a7c876"
+      Hint: Description
+      Value: |
+        Everyone should rest at least once a year, so when you start to spend sleepless nights thinking about the sun and the sea, when you think longingly about the green countryside, there is no longer any doubt - you are ready for the rest. You need to move away from all your everyday problems and get some fresh air.
+         Paris is a political, administrative and cultural centre of the country. The University of Paris or Sorbonne, founded in the 12th century, is one of its original medieval colleges and one of the best and most prestigious universities in the world. Paris is recognized as the educational centre of the country and the major part of schools and universities is located there. The population of the city is multifarious: Europeans, black people, Arabs. Paris is a motherland of numerous magazines, newspapers and publications.
+         A modern and elegant hotel, recently renovated and refurbished, ideal for both business and leisure travelers, it contains 34 cozy rooms and is a 5-minute walk from the train station. All rooms are equipped with modern showers and toilets, TV with satellite channels, W-Lan, radio, telephone, safe. For a successful start to the day, guests are offered a buffet breakfast. In the immediate vicinity of the hotel there is the "old town" with "the longest bar in the world", the Royal Alley, musicals and theaters, exhibitions and the international airport, which can be easily reached by public transport.
+    - ID: "c1b4d955-3944-4eca-a1c3-0cdd2fdc9926"
+      Hint: Tags
+      Type: Treelist
+      Value: |
+        {D717FA23-2582-44C9-AB2C-ECE0027150A6}
+        {126D7A47-E537-45EB-9DD3-3D18725378A2}
+    - ID: "d0b7c6a1-7c82-4f01-9da7-48a825e667ee"
+      Hint: EndDate
+      Value: 20210228T140055Z
+  - Version: 2
+    Fields:
+    - ID: "23a213e8-4b53-4e63-8ca6-309d0e88db5a"
+      Hint: StartDate
+      Value: 20210221T140055Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210212T145545Z
+    - ID: "3986d092-0659-41f4-9d38-072639a93098"
+      Hint: ButtonText
+      Value: Press Here Better
+    - ID: "3e431de1-525e-47a3-b6b0-1ccbec3a8c98"
+      Hint: __Workflow state
+      Value: "{2C644806-2C46-4677-BBF8-56238343AB06}"
+    - ID: "50911beb-2fa0-4b2f-bb02-7c014fa793f2"
+      Hint: Title
+      Value: Fantastic hike to Carpathians
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Content Editor
+    - ID: "7b440603-9dc7-45a4-9935-94ea995e005a"
+      Hint: ShortDescription
+      Value: Traveling is very popular nowadays. Mount Everest is the highest peak in the world and is located in the Himalayas. The hotel offers cozy comfortable double rooms and superior rooms that meet European standards.
+    - ID: "9bdeb640-bb42-456c-a7e9-6fcf76ba9f93"
+      Hint: Difficulty
+      Value: 3
+    - ID: "a0cff737-944a-43ef-9fa8-810d54a7c876"
+      Hint: Description
+      Value: |
+        Everyone should rest at least once a year, so when you start to spend sleepless nights thinking about the sun and the sea, when you think longingly about the green countryside, there is no longer any doubt - you are ready for the rest. You need to move away from all your everyday problems and get some fresh air.
+         Paris is a political, administrative and cultural centre of the country. The University of Paris or Sorbonne, founded in the 12th century, is one of its original medieval colleges and one of the best and most prestigious universities in the world. Paris is recognized as the educational centre of the country and the major part of schools and universities is located there. The population of the city is multifarious: Europeans, black people, Arabs. Paris is a motherland of numerous magazines, newspapers and publications.
+         A modern and elegant hotel, recently renovated and refurbished, ideal for both business and leisure travelers, it contains 34 cozy rooms and is a 5-minute walk from the train station. All rooms are equipped with modern showers and toilets, TV with satellite channels, W-Lan, radio, telephone, safe. For a successful start to the day, guests are offered a buffet breakfast. In the immediate vicinity of the hotel there is the "old town" with "the longest bar in the world", the Royal Alley, musicals and theaters, exhibitions and the international airport, which can be easily reached by public transport.
+    - ID: "c1b4d955-3944-4eca-a1c3-0cdd2fdc9926"
+      Hint: Tags
+      Type: Treelist
+      Value: |
+        {D717FA23-2582-44C9-AB2C-ECE0027150A6}
+        {126D7A47-E537-45EB-9DD3-3D18725378A2}
+    - ID: "c8f93afe-bfd4-4e8f-9c61-152559854661"
+      Hint: __Valid from
+      Value: 20210212T145545Z
+    - ID: "cef157e6-ff57-4378-8059-47faed792b7d"
+      Hint: Image
+      Value: 
+    - ID: "d0b7c6a1-7c82-4f01-9da7-48a825e667ee"
+      Hint: EndDate
+      Value: 20210228T140055Z

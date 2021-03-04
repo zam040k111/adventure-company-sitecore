@@ -1,0 +1,73 @@
+﻿---
+ID: "dd89bef2-8dae-4d76-88f2-b2b615695cee"
+Parent: "3c46ecd0-2780-4eb0-8b33-68760d2d4b01"
+Template: "72b40e48-a2b6-4ddf-be66-ad0911f53f75"
+Path: /sitecore/content/Adventure/Home/Biking List/Incredible excursion to the Paris n817328266
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <event
+        id="{F4AABF37-7936-406F-BB86-34B6236BFB55}"
+        name="Bike Page Visited" />
+      <profile
+        id="0cad9a95-b252-45ab-91b1-caff25c83a07"
+        name="Event Details Type"
+        presets="biker|100||">
+        <key
+          name="Biking"
+          value="10" />
+        <key
+          name="Climbing"
+          value="0" />
+        <key
+          name="Hiking"
+          value="0" />
+      </profile>
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 600
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23a213e8-4b53-4e63-8ca6-309d0e88db5a"
+      Hint: StartDate
+      Value: 20210211T135426Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210125T135426Z
+    - ID: "3986d092-0659-41f4-9d38-072639a93098"
+      Hint: ButtonText
+      Value: Click  Stronger
+    - ID: "50911beb-2fa0-4b2f-bb02-7c014fa793f2"
+      Hint: Title
+      Value: Incredible excursion to the Paris
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous
+    - ID: "7b440603-9dc7-45a4-9935-94ea995e005a"
+      Hint: ShortDescription
+      Value: Traveling is very popular nowadays. The Arctic is a single physical and geographical region of the Earth. Your Hotel Ambassador Tre Rose is cozy and small, enveloped in a relaxed atmosphere.
+    - ID: "9bdeb640-bb42-456c-a7e9-6fcf76ba9f93"
+      Hint: Difficulty
+      Value: 8
+    - ID: "a0cff737-944a-43ef-9fa8-810d54a7c876"
+      Hint: Description
+      Value: |
+        Travel is always something new and interesting, it is a meeting with new people, cities and sights. Travel always gives new emotions and impressions, it allows you to escape from everyday life and plunge into a new other life, at least for a few days.
+         The moon is the only natural satellite of the earth. The closest satellite of the planet to the Sun, since the planets closest to the Sun do not have them. The second brightest object in the earth's sky after the Sun and the fifth largest natural satellite of the planet of the solar system. The average distance between the centers of the Earth and the Moon is 384 467 km.
+         Your Hotel Ambassador Tre Rose is cozy and small, enveloped in a relaxed atmosphere in which every guest will feel comfortable, the Venice Hotel has common areas - hall, administration and bar - refurbished by the skillful hand of the Venetian architect Carlo Scarpa.
+    - ID: "c1b4d955-3944-4eca-a1c3-0cdd2fdc9926"
+      Hint: Tags
+      Type: Treelist
+      Value: "{5C13C6D2-F043-4277-85AC-428AF62DA3CF}"
+    - ID: "d0b7c6a1-7c82-4f01-9da7-48a825e667ee"
+      Hint: EndDate
+      Value: 20210228T135426Z

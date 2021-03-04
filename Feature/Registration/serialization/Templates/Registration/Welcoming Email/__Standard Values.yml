@@ -1,0 +1,42 @@
+﻿---
+ID: "14fdf9c9-c630-4f61-981b-87374d0b9f89"
+Parent: "6ddefd97-9ccd-42b5-9849-301c42d25460"
+Template: "6ddefd97-9ccd-42b5-9849-301c42d25460"
+Path: /sitecore/templates/Feature/Registration/Welcoming Email/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "1e6a2481-3fae-4fa3-8c16-d4409850fc9a"
+      Hint: Styles
+      Value: |
+        <style>
+            * {
+            text-align: center;
+            }
+        </style>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201217T115858Z
+    - ID: "3a444dce-f111-47ec-a03f-77c26537bf51"
+      Hint: Header
+      Value: |
+        <h2 class="text-center">Hello!</h2>
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "7f1b1322-b2d4-4985-bfb2-297aa97fe533"
+      Hint: Body
+      Value: |
+        <h4 class="text-center">You have been successfully registered!</h4>
+    - ID: "9b98df65-5343-4c52-8d30-1def2ad83779"
+      Hint: Subject
+      Value: "Successful registration!"

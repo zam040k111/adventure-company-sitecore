@@ -1,0 +1,45 @@
+﻿@using Adventure.Feature.Events.Constants
+@using Adventure.Foundation.Common.Helpers
+@using Glass.Mapper.Sc.Web.Mvc
+@model Foundation.ORM.Sitecore.templates.Project.Adventure.IEventDetailsPage
+
+<div class="px-3 py-3">
+	<link type="text/css" rel="stylesheet" href="~/Content/Css/Difficulty.css" />
+	@{
+		const int diffSize = 10;
+		const int redIndexUpTo = 2;
+		const int yellowIndexUpTo = 6;
+	}
+	<header>
+		<h1 style="color:firebrick">@Html.Glass().Editable(i => i.Title)</h1>
+	</header>
+	<div class="well">
+		<p class="text-muted">
+			@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.StartDate)
+			@Html.Glass().Editable(i => i.StartDate)
+		</p>
+		<p class="text-muted">
+			@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.EndDate)
+			@Html.Glass().Editable(i => i.EndDate)
+		</p>
+		<span class="text-muted">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Difficulty)</span>
+		<div class="difficulty-circle">
+			@for (int diffIndex = 0, reversIndex = diffSize; diffIndex < diffSize; diffIndex++, reversIndex--)
+			{
+				var color = diffIndex <= redIndexUpTo ? "red" : diffIndex <= yellowIndexUpTo ? "yellow" : "green";
+				var ckd = reversIndex == Model.Difficulty ? "checked='checked'" : "";
+				<input type="radio" @ckd name="group-2" id=group-2-@diffIndex value=@reversIndex />
+				<label class=@color for=group-2-@diffIndex></label>
+			}
+		</div>
+	</div>
+	<div class="article image">
+		@Html.Glass().RenderImage(i => i.Image, new { mw = "400" })
+	</div>
+	<h4 class="lead">
+		@Html.Glass().Editable(i => i.ShortDescription)
+	</h4>
+	<div class="highlights">
+		@Html.Glass().Editable(i => i.Description)
+	</div>
+</div>

@@ -1,0 +1,21 @@
+﻿---
+ID: "d717fa23-2582-44c9-ab2c-ece0027150a6"
+Parent: "d84e8c10-4244-46d9-8cd8-7831f9f54e11"
+Template: "5b506a31-71fd-412d-8944-4e6059c2461e"
+Path: /sitecore/content/Components/Events/Tags/Climbing
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210207T201310Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "c8ccee70-196f-4f8d-ae74-36f81ca43268"
+      Hint: Tag Name
+      Value: Climbing

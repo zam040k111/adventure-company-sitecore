@@ -1,0 +1,132 @@
+﻿---
+ID: "edb82ce1-61eb-4664-a6d3-f66d938717be"
+Parent: "ae787a95-6f1b-4cbf-b7dc-02ebdc1c7911"
+Template: "4a1a2211-216d-4e5a-a401-1d632f4221b2"
+Path: /sitecore/content/Adventure/Home/Registration Page
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 900
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r xmlns:xsd="http://www.w3.org/2001/XMLSchema"
+      xsd="http://www.w3.org/2001/XMLSchema">
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{682DA97E-290B-4C97-83D4-C11EB294A915}">
+        <r
+          ds="{DD313293-FADD-4EEB-B290-1CCB9FAB3337}"
+          id="{A3BCB856-54E6-4D7C-BCA5-E29ABAEAF8E0}"
+          ph="/main/content-4-c-{845488A5-D563-4A64-811C-C0524D74D4B5}-0"
+          uid="{58479C70-B4DD-4F30-B579-D38AF87671D6}" />
+        <r
+          id="{9562F2F5-3CC3-437B-86BA-BD33F3C4A43E}"
+          ph="main"
+          uid="{845488A5-D563-4A64-811C-C0524D74D4B5}" />
+        <r
+          id="{6F678E94-15DF-4E70-98D4-927FF054E5D6}"
+          ph="/header/content-8-4_4-{1C3B7B33-1533-47A0-A3D0-9A0AA4FBE1C3}-0"
+          uid="{90E81083-7CE5-4425-BCBE-752B8C7FFE93}" />
+        <r
+          id="{BCD6161F-D750-48DE-BD14-3C2DB6206C82}"
+          ph="header"
+          uid="{E0DFB38E-2BDD-41FF-A299-9B665112C9F4}" />
+        <r
+          id="{BCD6161F-D750-48DE-BD14-3C2DB6206C82}"
+          ph="header"
+          uid="{1C3B7B33-1533-47A0-A3D0-9A0AA4FBE1C3}" />
+      </d>
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "0395d159-d7cd-4cdf-83fd-18192d284d8f"
+      Hint: Password contains no number message
+      Value: Password must contain at least one numeric symbol.
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{58479C70-B4DD-4F30-B579-D38AF87671D6}">
+              <p:d />
+            </r>
+            <r
+              uid="{14F96E48-A3E9-42CC-A8E9-9D0F5F489C83}"
+              p:before="*"
+              s:ds=""
+              s:id="{A3BCB856-54E6-4D7C-BCA5-E29ABAEAF8E0}"
+              s:par="UserName=User%20name&amp;Email=Email&amp;Password=Password&amp;ConfirmPassword=Confirm%20password"
+              s:ph="/main/content-4-c-{BBAF1640-3EE2-44B9-9B07-660671CDEC8F}-0" />
+            <r
+              uid="{CD6E81A7-B9B4-4EA6-99DA-C8EBF1A64A2F}"
+              p:after="r[@uid='{14F96E48-A3E9-42CC-A8E9-9D0F5F489C83}']"
+              s:id="{A3BCB856-54E6-4D7C-BCA5-E29ABAEAF8E0}"
+              s:ph="/main/content-4-{BBAF1640-3EE2-44B9-9B07-660671CDEC8F}-0" />
+            <r
+              uid="{BBAF1640-3EE2-44B9-9B07-660671CDEC8F}"
+              p:after="r[@uid='{CD6E81A7-B9B4-4EA6-99DA-C8EBF1A64A2F}']"
+              s:id="{9562F2F5-3CC3-437B-86BA-BD33F3C4A43E}"
+              s:ph="main" />
+            <r
+              uid="{A855D217-CD40-4653-9344-5E45D0771B0F}"
+              p:after="*[1=2]"
+              s:id="{A3BCB856-54E6-4D7C-BCA5-E29ABAEAF8E0}"
+              s:ph="/main/content-4-8_4-{23AA527D-8763-41A5-A4F9-CD87CBB54450}-0" />
+          </d>
+        </r>
+    - ID: "198b4447-fc7c-483e-9d08-0121be7007b6"
+      Hint: Password length message
+      Value: Password length must be at least 8 charactersdawdoawmdo.
+    - ID: "1f732ba4-4503-4b66-93b4-fb274e911b49"
+      Hint: InlineStyling
+      Value: |
+        Content\Css\Feature\Registration\Registration form.min.css
+    - ID: "2198dd13-010c-4fbe-aec5-54b6d5feb58c"
+      Hint: StylingFiles
+      Value: |
+        Content\Css\Feature\Registration\Registration form.css
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201125T103535Z
+    - ID: "5b3ed234-c51a-46a1-93cb-a42f271f8cbc"
+      Hint: InlineScript
+      Value: |
+        Scripts\Adventure.Feature.Registration\RegisterUser.min.js
+    - ID: "74985269-77b0-43cd-af38-3ecf0320e0ae"
+      Hint: Password contains no special message
+      Value: Password must contain at least one non numeric and non letter symbol.
+    - ID: "74fe7e08-681a-4c12-b6d1-c17c2d1b6453"
+      Hint: Email sent message
+      Value: "Welcoming letter has been sent to your email!"
+    - ID: "7507e389-ac86-4f50-bd67-4e0f793dcda8"
+      Hint: Submit button text
+      Value: Sign Up
+    - ID: "7d208423-441d-45b5-8a2b-73703e10c2e9"
+      Hint: Password contains no upper case message
+      Value: Password must contain at least one upper case letter.
+    - ID: "836a5e1c-d518-42be-a558-196cc3bb8921"
+      Hint: User name length message
+      Value: User name length must be between 3 and 30 characters.
+    - ID: "89bc8fd4-6ddd-4a39-b4fb-b4b48561f2c4"
+      Hint: Email unique message
+      Value: Some user has the same email
+    - ID: "8cb1aeb3-f4a5-4186-b843-ddd514deabbc"
+      Hint: Password contains no lower case message
+      Value: Password must contain at least one lower case letter.
+    - ID: "c90ff7c4-f5f6-4942-bbee-4a5fb259c14d"
+      Hint: ScriptFiles
+      Value: |
+        Scripts\Adventure.Feature.Registration\RegisterUser.js
+    - ID: "e77859df-ac8c-425d-ab1e-b7d084b69eeb"
+      Hint: Unsuccessful registration message
+      Value: Registration failed

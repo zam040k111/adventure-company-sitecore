@@ -1,0 +1,23 @@
+﻿---
+ID: "cf099cac-e8ce-42fe-89c8-a415917723bf"
+Parent: "f9f6de61-ba86-41f3-b10b-036d2aa0438f"
+Template: "4b7e2da9-de43-4c83-88c3-02f042031d04"
+Path: /sitecore/system/Workflows/Event Details Workflow/Review
+DB: master
+SharedFields:
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Content Editor|pe|+workflowState:write|pd|+workflowState:write|
+Languages:
+- Language: en
+  Fields:
+  - ID: "8c980a06-4059-4939-9c6f-a10f751ceb64"
+    Hint: Description
+    Value: Tells that an event is under review
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T120340Z

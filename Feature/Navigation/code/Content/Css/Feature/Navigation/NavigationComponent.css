@@ -1,0 +1,13 @@
+﻿h4#navigation-component-title {
+    color: rgb(237, 28, 98)
+}
+
+div.tree-item {
+    border-left: .05em solid rgb(195, 193, 193)
+}
+
+div#navigation-component-container a,
+div#navigation-component-container a:hover{
+    text-decoration: none;
+    color: rgb(128, 128, 128);
+}

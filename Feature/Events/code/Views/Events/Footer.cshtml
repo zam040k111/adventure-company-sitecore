@@ -1,0 +1,23 @@
+﻿@model Feature.Events.Footer.IFooter
+
+@using Glass.Mapper.Sc.Web.Mvc
+@using System.Collections
+
+@{
+    <div class="row">
+
+        @if (Model.Links != null)
+        {
+            foreach (var link in Model.Links)
+            {
+                <div class="col-6">
+                    <a href="@link.Url">@link.Text</a>
+                </div>
+            }
+        }
+    </div>
+}
+
+<p align="center">
+    @Html.Glass().Editable(Model, e => e.Copyright)
+</p>

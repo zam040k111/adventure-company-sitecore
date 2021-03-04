@@ -1,0 +1,24 @@
+﻿@using Adventure.Feature.Events.Constants
+@using Adventure.Foundation.Common.Helpers
+@using Glass.Mapper.Sc.Web.Mvc
+@model Feature.Events.IUpcomingEvents
+
+<div class="container">
+	<div class="row bg-danger text-white">
+		<div class="col-md-12">
+			<h4 class="py-4">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Events)</h4>
+			@foreach (var item in Model.Events)
+			{
+				<p>
+					<div>@item.StartDate.ToShortDateString()</div>
+					<h3 class="font-weight-bold">@item.Title</h3>
+				</p>
+			}
+			<div class="py-4">
+				<a class="btn btn-outline-light" href="@Model.ButtonUrl" role="button">
+					@Html.Glass().Editable(i => i.ButtonName)
+				</a>
+			</div>
+		</div>
+	</div>
+</div>

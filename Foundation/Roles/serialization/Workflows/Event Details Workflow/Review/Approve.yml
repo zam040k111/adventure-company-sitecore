@@ -1,0 +1,22 @@
+﻿---
+ID: "e1b8c5fd-56cc-4ab2-b0a4-cb75e42d602f"
+Parent: "cf099cac-e8ce-42fe-89c8-a415917723bf"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Event Details Workflow/Review/Approve
+DB: master
+SharedFields:
+- ID: "82a7c02f-9a55-4bfe-b494-d1713d4be9ff"
+  Hint: Suppress Comment
+  Type: Checkbox
+  Value: 1
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{98F5EFA9-2976-40F7-9186-8CD9A3FFD336}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T123600Z

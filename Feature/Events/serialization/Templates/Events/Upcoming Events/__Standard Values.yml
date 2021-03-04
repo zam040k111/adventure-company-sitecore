@@ -1,0 +1,26 @@
+﻿---
+ID: "47881a1a-2013-48c1-85e3-adea7819b31b"
+Parent: "a97d39da-6df2-47f3-b60c-81afa08e7509"
+Template: "a97d39da-6df2-47f3-b60c-81afa08e7509"
+Path: /sitecore/templates/Feature/Events/Upcoming Events/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201124T131330Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "b203246e-4687-4b6f-a31c-f016f436379c"
+      Hint: ButtonName
+      Value: Read more

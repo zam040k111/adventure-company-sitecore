@@ -1,0 +1,14 @@
+﻿---
+ID: "352af551-b8b3-4901-9c01-0674a6a8445c"
+Parent: "a06959c8-f743-4d03-9735-d824b4fc0d29"
+Template: "267d9ac7-5d85-4e9d-af89-99ab296cc218"
+Path: /sitecore/system/Dictionary/Feature/EventDetailsProvider/ErrorMessages
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210219T153228Z

@@ -1,0 +1,21 @@
+﻿---
+ID: "ae624454-4127-437c-a550-5ba8e97e60b6"
+Parent: "90531e11-39b1-40c0-a7db-a1e19d3f2f08"
+Template: "04392dc9-5222-4275-8962-d01e03cd61c6"
+Path: /sitecore/content/Components/Events/Footer/Footer Links/About Us
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210212T124246Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "923e440f-1fc1-47b4-bfff-37d329f561bb"
+      Hint: Text
+      Value: About Us

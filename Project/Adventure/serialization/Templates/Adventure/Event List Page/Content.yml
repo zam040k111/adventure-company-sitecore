@@ -1,0 +1,18 @@
+﻿---
+ID: "ad8e46cd-25a0-45b3-9738-5a4c24d71c3d"
+Parent: "fb686a69-7ea4-462f-91ed-4610ef0ba908"
+Template: "e269fbb5-3750-427a-9149-7aa950b49301"
+Path: /sitecore/templates/Project/Adventure/Event List Page/Content
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201207T085756Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

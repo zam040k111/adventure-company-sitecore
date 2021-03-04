@@ -1,0 +1,95 @@
+﻿@using Adventure.Feature.UserProfile.Constants
+@using Adventure.Foundation.Common.Helpers
+@model Adventure.Feature.UserProfile.Models.UserProfileModel
+
+<link rel="stylesheet" href="~/Content/Css/Adventure.Feature.UserProfile/EventTags.css" />
+<div class="container py-3">
+
+	<div class="text-danger">
+		<ul class="validation-messages">
+			<li class="d-none" id="@DictionaryKeys.Messages.FileIsNotImage">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.FileIsNotImage)</li>
+			<li class="d-none" id="@DictionaryKeys.Messages.NoDataToUpload">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.NoDataToUpload)</li>
+			<li class="d-none" id="@DictionaryKeys.Messages.InvalidImageSize">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.InvalidImageSize)</li>
+			<li class="d-none" id="@DictionaryKeys.Messages.UnsuccessfulImageUpload">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.UnsuccessfulImageUpload)</li>
+		</ul>
+	</div>
+	<div id="input-list">
+
+		<div class="text-success d-none" id="success">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.Successful)</div>
+		<div class="text-danger d-none" id="failed">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.Unsuccessful)</div>
+
+		<img id="user-photo" class="py-3" src="@Model.Photo" width="200" height="200" />
+
+		<form class="py-3" enctype="multipart/form-data" name="file-form">
+			<label class="btn btn-dark" for="input-file">
+				<input id="input-file" type="file" name="file" class="d-none">@Html.Sitecore().TranslateLabel(DictionaryKeys.Buttons.ChooseFile)
+			</label>
+			<br />
+			<button id="submit-file" class="btn btn-dark" type="button">@Html.Sitecore().TranslateLabel(DictionaryKeys.Buttons.SavePhoto)</button>
+		</form>
+
+		<label for="FirstName">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.FirstName)</label>
+		<input id="FirstName" value="@Model.FirstName" type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.FirstName)" />
+		<label for="LastName">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.LastName)</label>
+		<input id="LastName" value="@Model.LastName" type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.LastName)" />
+		<div class="text-danger">
+			<ul class="validation-messages">
+				<li class="d-none" id="@DictionaryKeys.Messages.EmailNotCorrect">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.EmailNotCorrect)</li>
+			</ul>
+		</div>
+		<label for="Email">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Email)</label>
+		<input id="Email" value="@Model.Email" type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Email)" />
+		<label for="Phone">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Phone)</label>
+		<input id="Phone" value="@Model.Phone" type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Phone)" />
+		<label for="Title">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Title)</label>
+		<input id="Title" value="@Model.Title" type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Title)" />
+		<div>
+			<label for="tags">All tags</label>
+			<div class="bootstrap-tagsinput" id="tags">
+				@foreach (var tag in Model.UnselectedTags)
+				{
+					<span class="tag label label-info tag-item" id="@tag.Id.ToString("N")">@tag.TagName</span>
+				}
+			</div>
+			<br />
+			<label for="tag-container">Your tags</label>
+			<div class="bootstrap-tagsinput" id="tag-container">
+				@foreach (var tag in Model.Tags)
+				{
+					<span class="tag label label-info selected-item" id="@tag.Id.ToString("N")">@tag.TagName
+						<span data-role="remove" class="btn-remove"></span>
+					</span>
+				}
+			</div>
+		</div>
+		<div class="text-danger">
+			<ul class="validation-messages">
+				<li class="d-none" id="@DictionaryKeys.Messages.InvalidOldPassword">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.InvalidOldPassword)</li>
+			</ul>
+		</div>
+		<label for="OldPassword">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.OldPassword)</label>
+		<input id="OldPassword" type="password" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.OldPassword)" />
+		<div class="text-danger">
+			<ul class="validation-messages">
+				<li class="d-none" id="@DictionaryKeys.Messages.PasswordNotContainsNumber">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.PasswordNotContainsNumber)</li>
+				<li class="d-none" id="@DictionaryKeys.Messages.PasswordNotContainsUpperLetter">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.PasswordNotContainsUpperLetter)</li>
+				<li class="d-none" id="@DictionaryKeys.Messages.PasswordNotContainsLowerLetter">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.PasswordNotContainsLowerLetter)</li>
+				<li class="d-none" id="@DictionaryKeys.Messages.PasswordNotContainsNonNumeric">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.PasswordNotContainsNonNumeric)</li>
+				<li class="d-none" id="@DictionaryKeys.Messages.PasswordNotEnoughCharacters">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.PasswordNotEnoughCharacters)</li>
+			</ul>
+		</div>
+		<label for="Password">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Password)</label>
+		<input id="Password" type="password" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Password)" />
+		<div class="text-danger">
+			<ul class="validation-messages">
+				<li class="d-none" id="@DictionaryKeys.Messages.ConfirmPasswordFiled">@Html.Sitecore().TranslateLabel(DictionaryKeys.Messages.ConfirmPasswordFiled)</li>
+			</ul>
+		</div>
+		<label for="ConfirmPassword">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.PasswordConfirm)</label>
+		<input id="ConfirmPassword" type="password" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.PasswordConfirm)" />
+		<button id="user-profile-button" class="btn btn-dark" type="button">@Html.Sitecore().TranslateLabel(DictionaryKeys.Buttons.SaveChanges)</button>
+	</div>
+</div>
+
+<script src="~/Scripts/Adventure.Feature.UserProfile/UserProfile.js" defer></script>
+<script src="~/Scripts/Adventure.Feature.UserProfile/EventTags.js" defer></script>

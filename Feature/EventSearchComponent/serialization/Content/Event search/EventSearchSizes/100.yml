@@ -1,0 +1,21 @@
+﻿---
+ID: "3ff8b542-7e0a-41e6-a9e5-aca13d9cee6a"
+Parent: "9e64ba24-0f51-4553-bd23-76a8d39aa655"
+Template: "25fa188e-e0cc-48d0-8458-92c245c3a86d"
+Path: /sitecore/content/Components/Event search/EventSearchSizes/100
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201221T153902Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "844f7a35-22a3-4589-9435-9caab0140dbb"
+      Hint: Value
+      Value: 100

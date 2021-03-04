@@ -1,0 +1,19 @@
+﻿---
+ID: "96f3578d-a87b-4cf4-a58a-b90d464dadca"
+Parent: "aecc4b34-7e8d-4637-a664-503408c353b2"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Validation Rules/Field Rules/Project/Adventure
+DB: master
+SharedFields:
+- ID: "1172f251-dad4-4efb-a329-0c63500e4f1e"
+  Hint: __Masters
+  Type: TreelistEx
+  Value: "{8F8E2549-C77F-4860-B83B-54FA31E2BEFA}"
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20201106T154803:637402744832156157Z"

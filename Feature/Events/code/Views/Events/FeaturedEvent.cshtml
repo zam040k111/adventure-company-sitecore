@@ -1,0 +1,29 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model Foundation.ORM.Sitecore.templates.Project.Adventure.IEventDetailsPage
+
+<div class="col-sm-4 d-flex justify-content-cneter" style="margin-top: 20px">
+    <div class="thumbnail well @Html.Sitecore().CurrentRendering.Parameters["BackgroundColor"]">
+        @{
+            if (Model.Tags != null)
+            {
+                foreach (var item in Model.Tags)
+                {
+                    <span>@item.TagName </span>
+                }
+            }
+        }
+
+        @Html.Glass().Editable(Model, e => e.Image, new { @class = "img-responsive", mw = 500, mh = 333 })
+
+        <div class="caption">
+            <h4>
+                @Html.Glass().Editable(Model, e => e.Title)
+
+            </h4>
+            <p>
+                @Html.Glass().Editable(Model, e => e.Description)
+            </p>
+        </div>
+        <a href="@Model.Url" class="btn btn-default">@Html.Glass().Editable(Model, e => e.ButtonText)</a>
+    </div>
+</div>

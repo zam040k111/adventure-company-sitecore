@@ -1,0 +1,18 @@
+﻿---
+ID: "c16c9818-cfdf-4c2b-bc9e-caebeb1577a7"
+Parent: "6518d066-b702-4391-a174-3c9d35079adc"
+Template: "f847d1bb-af68-4477-b687-9986a3a664ed"
+Path: "/sitecore/content/Components/Events/FeaturedEvents/BackgroundColors/bg-info"
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201203T152434Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

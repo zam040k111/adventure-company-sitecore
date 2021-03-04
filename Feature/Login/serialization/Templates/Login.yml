@@ -1,0 +1,14 @@
+﻿---
+ID: "b945448e-4554-4cd1-b231-446c9c1c2002"
+Parent: "8f343079-3cc5-4ef7-bc27-32addb46f45e"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/templates/Feature/Login
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20201201T170619:637424391796531770Z"

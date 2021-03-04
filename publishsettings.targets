@@ -1,0 +1,9 @@
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <!-- <publishUrl>C:\inetpub\wwwroot\Adventure_Company.dev.local</publishUrl> -->
+    <publishUrl>C:\inetpub\wwwroot\Adventure_Companysc.dev.local</publishUrl>
+    <ExcludeFilesFromDeployment>
+      bin\Sitecore.Kernel.dll;bin\Sitecore.Mvc.dll;bin\Sitecore.Mvc.Analytics.dll;Web.config;Views\Web.config;
+    </ExcludeFilesFromDeployment>
+  </PropertyGroup>
+</Project>

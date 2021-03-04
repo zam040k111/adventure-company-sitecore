@@ -1,0 +1,14 @@
+﻿---
+ID: "b6747a61-e99d-4c10-b5ff-7ad2ca98b89b"
+Parent: "5dc234b5-285c-4c32-8716-bc14d89d0f2b"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/EventDetailsComments/Comment/Comment form settings/Comment section title
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: "20201126T092654:637419796148991309Z"

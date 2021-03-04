@@ -1,0 +1,22 @@
+﻿---
+ID: "77b9d2a7-7295-4513-b32f-18ef348d5da5"
+Parent: "e67e7660-8011-46a1-8947-5e1d5be14bdc"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Dictionary/Feature/Registration/DefaultEmailContent/Body
+DB: master
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: Feature.Registration.DefaultEmailContent.Body
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: "Welcome!"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210104T122504Z

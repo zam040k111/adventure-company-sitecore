@@ -1,0 +1,49 @@
+﻿---
+ID: "a073af78-ae33-46cc-95f2-c4453ddc3f38"
+Parent: "ae787a95-6f1b-4cbf-b7dc-02ebdc1c7911"
+Template: "b95b386b-882e-4e49-85aa-d33dcc76ac32"
+Path: /sitecore/content/Adventure/Home/EventSearchSettings
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{682DA97E-290B-4C97-83D4-C11EB294A915}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{53EF55A3-3076-448D-944F-2B38256F1A13}"
+              s:id="{A73E2456-3C4D-49E9-B5AC-06260A951B25}"
+              s:ph="header" />
+          </d>
+        </r>
+    - ID: "15121c03-4a0a-4d65-b239-2590b726a094"
+      Hint: PageSizeOptions
+      Type: Multilist
+      Value: |
+        {0CADC668-A66B-43B1-8039-3B14CF880F79}
+        {904620AB-421B-4014-9577-7DC38D729DF8}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210206T124022Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

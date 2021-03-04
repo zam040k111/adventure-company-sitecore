@@ -1,0 +1,27 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@using System.Collections
+@model Foundation.ORM.Sitecore.templates.Project.Adventure.IEventListPage
+
+
+<div class="container">
+    <div class="row">
+        @foreach (var item in Model.Events)
+        {
+            <div class="col-sm-4 d-flex justify-content-cneter">
+                <div class="thumbnail well">
+                    @Html.Glass().Editable(item, e => e.Image, new { @class = "img-responsive", mw = 500, mh = 333 })
+                    <div class="caption">
+                        <h4>
+                            @Html.Glass().Editable(item, e => e.Title)
+
+                        </h4>
+                        <p>
+                            @Html.Glass().Editable(item, e => e.Description)
+                        </p>
+                    </div>
+                    <a href="@item.Url" class="btn btn-default">@Html.Glass().Editable(item, e => e.ButtonText)</a>
+                </div>
+            </div>
+        }
+    </div>
+</div>

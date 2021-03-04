@@ -1,0 +1,14 @@
+﻿---
+ID: "3b1a55ab-7722-40b1-99dd-748872a8061c"
+Parent: "4649823e-a25a-4eaa-ae17-46953e4f1345"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/layout/Placeholder Settings/Feature/Events/FeaturedEvents
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201203T055003Z

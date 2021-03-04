@@ -1,0 +1,29 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model Feature.Mailing.ISubscriptionForm
+
+@{ string email = Sitecore.Context.User.Profile.Email; }
+
+@if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+{
+	<h4>Validation messages</h4>
+	<div>@Html.Glass().Editable(i => i.Success)</div>
+	<div>@Html.Glass().Editable(i => i.Fail)</div>
+	<div>@Html.Glass().Editable(i => i.Email)</div>
+}
+<div class="text-success d-none" id="success">@Model.Success</div>
+<div class="text-danger d-none" id="fail">@Model.Fail</div>
+<div class="text-danger d-none" id="email-validation-message">@Model.Email</div>
+@if (string.IsNullOrWhiteSpace(email) || Sitecore.Context.User.IsAdministrator)
+{
+	<h4>@Html.Glass().Editable(model => model.SubscriptionEmail)</h4>
+	<input type="email" class="form-control mb-3" id="subscriptionEmail" />
+}
+else
+{
+	<input type="hidden" id="subscriptionEmail" value="@email" />
+}
+<button id="subscriptionButton" class="btn btn-dark">@Html.Glass().Editable(model => model.Subscribe)</button>
+
+<script src="~/Scripts/Adventure.Feature.Mailing/Mailing.js" defer></script>
+
+<a href=""></a>

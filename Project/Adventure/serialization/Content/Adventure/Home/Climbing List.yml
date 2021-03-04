@@ -1,0 +1,28 @@
+﻿---
+ID: "972331df-cdab-4e63-92b6-401453793800"
+Parent: "ae787a95-6f1b-4cbf-b7dc-02ebdc1c7911"
+Template: "fb686a69-7ea4-462f-91ed-4610ef0ba908"
+Path: /sitecore/content/Adventure/Home/Climbing List
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 200
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201207T112000Z
+    - ID: "d113ce03-4125-49bd-bbce-acc236d729e1"
+      Hint: ExcludeFromNavigation
+      Type: Checkbox
+      Value: 0
+    - ID: "e2cd9b8c-16e5-447b-bb87-b2d699fbc875"
+      Hint: Events
+      Type: Treelist
+      Value: |
+        {9DEFDC36-75AE-4D0D-906E-FAD018CDF18E}
+        {281BED07-BF3F-4067-8865-30EC67F15D45}

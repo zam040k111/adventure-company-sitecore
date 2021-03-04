@@ -1,0 +1,21 @@
+﻿---
+ID: "7507e389-ac86-4f50-bd67-4e0f793dcda8"
+Parent: "5e530d0d-19eb-40ef-b2f7-bc50b5c59ab1"
+Template: "455a3e98-a627-4b40-8035-e683a0331ac7"
+Path: /sitecore/templates/Feature/Registration/Registration Page/Registratin button/Submit button text
+DB: master
+SharedFields:
+- ID: "ab162cc0-dc80-4abf-8871-998ee5d7ba32"
+  Hint: Type
+  Value: "Single-Line Text"
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 100
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201125T111440Z

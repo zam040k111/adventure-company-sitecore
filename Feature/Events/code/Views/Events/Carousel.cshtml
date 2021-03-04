@@ -1,0 +1,42 @@
+﻿@using Glass.Mapper.Sc.Web.Mvc
+@model Adventure.Feature.Events.Models.CarouselViewModel
+
+@Model.AssetsService.RenderStyles()
+<div id="carousel_1" class="carousel slide" data-ride="carousel">
+	<ol class="carousel-indicators">
+		@for (int i = 0; i < Model.Carousel.CarouselItems.Count(); i++)
+		{
+			var liClass = i == 0 ? "active" : "";
+			<li data-target="#carousel_1" data-slide-to="@i" class="@liClass"></li>
+		}
+	</ol>
+	<div class="carousel-inner" role="listbox">
+		@foreach (var item in Model.Carousel.CarouselItems)
+		{
+			var divClass = Model.Carousel.CarouselItems.FirstOrDefault() == item ? "item active" : "item";
+			<div class="@divClass">
+				<div class="jumbotron jumbotron-xl bg-media">
+					<div class="container">
+						<div class="row">
+							<div class="col-md-12">
+								<h1>@item.Title</h1>
+								<p>@Html.Glass().RenderImage(item, i => i.Image)</p>
+								<p class="lead">@item.Description</p>
+								<a class="btn btn-hollow btn-lg" href="@item.Url">
+									@Html.Glass().Editable(Model.Carousel, i => i.ButtonName)
+								</a>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		}
+	</div>
+	<a class="left carousel-control" href="#carousel_1" role="button" data-slide="prev">
+		<span class="sr-only">Previous</span>
+	</a>
+	<a class="right carousel-control" href="#carousel_1" role="button" data-slide="next">
+		<span class="sr-only">Next</span>
+	</a>
+</div>
+@Model.AssetsService.RenderScript()

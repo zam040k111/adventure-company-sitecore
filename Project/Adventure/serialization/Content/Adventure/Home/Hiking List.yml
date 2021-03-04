@@ -1,0 +1,32 @@
+﻿---
+ID: "90782f0b-6678-452d-a295-a102f7571dfd"
+Parent: "ae787a95-6f1b-4cbf-b7dc-02ebdc1c7911"
+Template: "fb686a69-7ea4-462f-91ed-4610ef0ba908"
+Path: /sitecore/content/Adventure/Home/Hiking List
+DB: master
+SharedFields:
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 300
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210108T124201Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "d113ce03-4125-49bd-bbce-acc236d729e1"
+      Hint: ExcludeFromNavigation
+      Type: Checkbox
+      Value: 0
+    - ID: "e2cd9b8c-16e5-447b-bb87-b2d699fbc875"
+      Hint: Events
+      Type: Treelist
+      Value: |
+        {E1A3971D-F8F6-4492-AE70-63DE13891048}
+        {852FA06F-7CA5-4E34-BB26-4038F3001B3B}

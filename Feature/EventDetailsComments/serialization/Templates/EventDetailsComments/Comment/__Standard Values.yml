@@ -1,0 +1,50 @@
+﻿---
+ID: "d9ce0ead-1d97-48c9-b0ba-194301372a89"
+Parent: "9051605c-8813-4cca-b906-240e2711b4db"
+Template: "9051605c-8813-4cca-b906-240e2711b4db"
+Path: /sitecore/templates/Feature/EventDetailsComments/Comment/__Standard Values
+DB: master
+SharedFields:
+- ID: "fd4e2050-186c-4375-8b99-e8a85dd7436e"
+  Hint: __Enable item fallback
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "05b3fac8-63b9-456c-9575-3a0a2e053c5d"
+      Hint: Comment author name length
+      Value: Name must contain at least 3 symbols
+    - ID: "14a4d04b-0f38-41bd-aacf-b37b6cce10dc"
+      Hint: Comment text placeholder
+      Value: Add your comment here
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201129T143555Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "617ddccc-7639-4640-ba51-660a49cf28f7"
+      Hint: Comment author name required
+      Value: Name is required
+    - ID: "b6747a61-e99d-4c10-b5ff-7ad2ca98b89b"
+      Hint: Comment section title
+      Value: What others have to say
+    - ID: "bc64b55c-f223-478f-a7de-1a0a72e86c78"
+      Hint: Author name placeholder
+      Value: Name
+    - ID: "d4c828d6-c146-4b03-a221-3e440f72662c"
+      Hint: Comment text length
+      Value: Comment text must contain at least 10 symbols
+    - ID: "d89452dc-d0df-4555-abfd-594430da9a63"
+      Hint: Successful adding comment message
+      Value: "Added!"
+    - ID: "eeda4234-ba3f-4a87-bb61-3a59ac92b8dd"
+      Hint: Comment button text
+      Value: Submit Comment
+    - ID: "effaea63-e25a-43aa-8c64-b569860daac9"
+      Hint: Comment text required
+      Value: Comment text is required

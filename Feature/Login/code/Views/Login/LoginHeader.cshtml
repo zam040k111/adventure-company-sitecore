@@ -1,0 +1,20 @@
+﻿@using Adventure.Feature.Login.Constants
+@using Adventure.Foundation.Common.Helpers
+@model string
+
+<nav class="navbar navbar-light bg-light">
+	<input id="login-button-text" type="hidden" value="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.HeaderButtons.Login)" />
+	<input id="logout-button-text" type="hidden" value="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.HeaderButtons.Logout)" />
+	<input id="hide-form-button-text" type="hidden" value="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.HeaderButtons.HideForm)" />
+	<a class="navbar-brand"></a>
+	<form class="form-inline">
+		<a id="user-name" class="px-3">@Model</a>
+		<button id="login-logout-button" class="btn btn-dark my-2 my-sm-0" type="button">
+			@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.HeaderButtons.Logout)
+		</button>
+	</form>
+</nav>
+
+<div id="login-form" class="d-none">
+	@Html.Sitecore().Rendering("{703495EA-4F50-4E11-8B0B-94D875E72E02}")
+</div>

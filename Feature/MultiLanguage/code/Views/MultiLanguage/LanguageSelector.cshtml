@@ -1,0 +1,30 @@
+﻿@model Adventure.Feature.MultiLanguage.Models.LanguageSelectorViewModel
+<link rel="stylesheet" href="~/Content/Css/Feature/MultiLanguage/Language Selector.css" />
+<div class="m-2" id="language-container">
+    <div>
+        <a href="#">
+            <img src="@Model.LanguageSelectorSettings.ImageFile.Src"
+                 alt="@Model.LanguageSelectorSettings.ImageFile.Alt"
+                 class="list-opener"
+                 height=30 />
+        </a>
+    </div>
+    <div id="language-selector">
+        <div class="pl-1 mt-2 list-opener" id="current-language">
+            <a href="#">@Model.CurrentLanguageName</a>
+        </div>
+        <div id="other-languages">
+            @foreach (var language in Model.Languages)
+            {
+                if (language.DisplayName != Model.CurrentLanguageName)
+                {
+                    <a href="@language.Link" class="pl-1">
+                        @language.DisplayName
+                    </a>
+                }
+            }
+        </div>
+    </div>
+</div>
+
+<script src="~/Content/Scripts/Feature/MultiLanguage/OpenLanguageSelector.js" defer="defer"></script>

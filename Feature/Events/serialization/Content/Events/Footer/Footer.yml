@@ -1,0 +1,26 @@
+﻿---
+ID: "fd1cd6ba-68a3-4e2b-9001-6111d122c5fb"
+Parent: "d4851124-d1a2-4e24-b6e7-bbcbb4b8cd61"
+Template: "0024d10e-b1b2-49c9-8624-481cc4ab8fd8"
+Path: /sitecore/content/Components/Events/Footer/Footer
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210212T130716Z
+    - ID: "463ec1db-4f2e-4619-b027-a18cacf63a30"
+      Hint: Links
+      Type: Treelist
+      Value: |
+        {AE624454-4127-437C-A550-5BA8E97E60B6}
+        {D5AABEF1-F1E3-49E0-8E8E-20FF222BE2DC}
+        {9A61139F-AE27-4D50-B6F7-4AE646FAC54F}
+        {08672641-25EB-40B8-BEB2-C724C09D7DD5}
+        {DA81AC0D-C126-4435-B6F0-1457ADCB0230}
+    - ID: "7bf2b4c7-217d-4393-8643-872b932ca0c2"
+      Hint: Copyright
+      Value: &copy; Adventure Company 2020

@@ -1,0 +1,25 @@
+﻿---
+ID: "d483298c-2777-4891-8340-594a2fd9529e"
+Parent: "cf099cac-e8ce-42fe-89c8-a415917723bf"
+Template: "cb01f9fc-c187-46b3-ab0b-97a8468d8303"
+Path: /sitecore/system/Workflows/Event Details Workflow/Review/Reject
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: Applications/32x32/delete2.png
+- ID: "dcbebc58-6124-4100-a248-fc717d6c78d5"
+  Hint: Next state
+  Value: "{2C644806-2C46-4677-BBF8-56238343AB06}"
+- ID: "dec8d2d5-e3cf-48b6-a653-8e69e2716641"
+  Hint: __Security
+  Value: |
+    ar|sitecore\Content Editor|pe|+workflowState:write|+workflowCommand:execute|pd|+workflowState:write|+workflowCommand:execute|
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T124122Z

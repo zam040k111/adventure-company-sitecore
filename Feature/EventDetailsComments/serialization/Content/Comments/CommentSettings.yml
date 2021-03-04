@@ -1,0 +1,65 @@
+﻿---
+ID: "e9646349-8671-4e66-940c-0be6717bf1cf"
+Parent: "ccfc8c7a-14ab-4fef-8fb8-0d74d2eb93b4"
+Template: "9051605c-8813-4cca-b906-240e2711b4db"
+Path: /sitecore/content/Components/Comments/CommentSettings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14a4d04b-0f38-41bd-aacf-b37b6cce10dc"
+      Hint: Comment text placeholder
+      Value: Add your comment here
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201129T195757Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "617ddccc-7639-4640-ba51-660a49cf28f7"
+      Hint: Comment author name required
+      Value: Name is required
+    - ID: "6619ae22-5050-4ca8-a6de-39027f040c08"
+      Hint: Displayed comment count
+      Value: 7
+    - ID: "bc64b55c-f223-478f-a7de-1a0a72e86c78"
+      Hint: Author name placeholder
+      Value: Name
+    - ID: "d89452dc-d0df-4555-abfd-594430da9a63"
+      Hint: Successful adding comment message
+      Value: Added
+    - ID: "effaea63-e25a-43aa-8c64-b569860daac9"
+      Hint: Comment text required
+      Value: Comment text is required
+- Language: "ru-RU"
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "14a4d04b-0f38-41bd-aacf-b37b6cce10dc"
+      Hint: Comment text placeholder
+      Value: Добавьте ваш комментарий сюда
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210113T110848Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin
+    - ID: "6619ae22-5050-4ca8-a6de-39027f040c08"
+      Hint: Displayed comment count
+      Value: 5
+    - ID: "b6747a61-e99d-4c10-b5ff-7ad2ca98b89b"
+      Hint: Comment section title
+      Value: Что говорят другие
+    - ID: "bc64b55c-f223-478f-a7de-1a0a72e86c78"
+      Hint: Author name placeholder
+      Value: Имя
+    - ID: "d89452dc-d0df-4555-abfd-594430da9a63"
+      Hint: Successful adding comment message
+      Value: "Добавлено!"
+    - ID: "eeda4234-ba3f-4a87-bb61-3a59ac92b8dd"
+      Hint: Comment button text
+      Value: Подтвердить

@@ -1,0 +1,25 @@
+﻿---
+ID: "4ec54b6e-534f-4c13-befe-a9172e070210"
+Parent: "0b0f84e4-5864-4e0a-8525-030258fb8c76"
+Template: "b95b386b-882e-4e49-85aa-d33dcc76ac32"
+Path: /sitecore/content/Components/Event search/EventSearchSettings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "15121c03-4a0a-4d65-b239-2590b726a094"
+      Hint: PageSizeOptions
+      Type: Multilist
+      Value: |
+        {1AA92551-7F10-4B4D-8988-E1060BEC1CCB}
+        {0CADC668-A66B-43B1-8039-3B14CF880F79}
+        {904620AB-421B-4014-9577-7DC38D729DF8}
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201221T151746Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Admin

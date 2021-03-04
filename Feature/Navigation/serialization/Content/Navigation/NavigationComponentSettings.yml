@@ -1,0 +1,21 @@
+﻿---
+ID: "270964dd-30fc-449f-96ed-9589d42580b7"
+Parent: "9882f2de-7cae-4fd4-8e8c-89397e5fa81c"
+Template: "c2e762a9-b675-4647-aa58-6b6500ad4cf3"
+Path: /sitecore/content/Components/Navigation/NavigationComponentSettings
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "21e75ac1-1060-4dfd-ad66-7c2ab301ac15"
+      Hint: Title
+      Value: Events
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210107T151255Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

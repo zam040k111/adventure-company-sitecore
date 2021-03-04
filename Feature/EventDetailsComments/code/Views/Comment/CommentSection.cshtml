@@ -1,0 +1,53 @@
+﻿@using Adventure.Feature.EventDetailsComments.Enums
+@using Glass.Mapper.Sc.Web.Mvc
+@model Adventure.Feature.EventDetailsComments.Models.CommentSectionViewModel
+
+<link rel="stylesheet" href="~/Content/Css/Feature/EventDetailsComments/Comment Section.css" />
+<div class="d-flex justify-content-center">
+    <div class="container">
+        <h4 class="font-weight-bold p-1">@Html.Glass().Editable(x => x.CommentSettings.CommentSectionTitle)</h4>
+        <div class="container-fluid" id="comment-container">
+            @foreach (var comment in Model.Comments)
+            {
+                <div>
+                    <span class="font-weight-bold">@comment.AuthorName</span> - @comment.DateAdded.ToString("dd MMM yyyy")
+                </div>
+                <div>
+                    @comment.Text
+                </div>
+            }
+        </div>
+    </div>
+</div>
+<div class="p-2" id="comment-section-input-container">
+    @if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        <div></div>
+        <h4>Validation messages</h4>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.CommentAuthorNameLength)</div>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.CommentAuthorNameRequired)</div>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.CommentTextLength)</div>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.CommentTextRequired)</div>
+        <h4 class="mt-3">Successful message</h4>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.SuccessfulAddingCommentMessage)</div>
+        <h4 class="mt-3">Displayed comments count</h4>
+        <div>@Html.Glass().Editable(x => x.CommentSettings.DisplayedCommentCount)</div>
+    }
+    <div class="text-danger">
+        <ul id="validation-container">
+            <li id="@AddCommentValidationMessages.AuthorNameLengthValidation" class="d-none">@Model.CommentSettings.CommentAuthorNameLength</li>
+            <li id="@AddCommentValidationMessages.AuthorNameRequiredValidation" class="d-none">@Model.CommentSettings.CommentAuthorNameRequired</li>
+            <li id="@AddCommentValidationMessages.TextLengthValidation" class="d-none">@Model.CommentSettings.CommentTextLength</li>
+            <li id="@AddCommentValidationMessages.TextRequiredValidation" class="d-none">@Model.CommentSettings.CommentTextRequired</li>
+        </ul>
+    </div>
+    <div class="text-success d-none" id="success-adding-container">@Model.CommentSettings.SuccessfulAddingCommentMessage</div>
+    <input type="hidden" value="@Model.CommentSettings.DisplayedCommentCount" id="CommentsCount" />
+    <input type="hidden" value="@Model.EventId" id="EventId" />
+    <input type="text" class="form-control" placeholder="@Model.CommentSettings.AuthorNamePlaceholder" id="AuthorName" />
+    <input type="text" class="form-control mb-2" placeholder="@Model.CommentSettings.CommentTextPlaceholder" id="Text" />
+    <button id="add-comment-button">@Html.Glass().Editable(x => x.CommentSettings.CommentButtonText)</button>
+</div>
+
+<script src="~/Scripts/Adventure.Feature.EventDetailsComments/AddComment.js" defer></script>
+<script src="~/Scripts/Adventure.Feature.EventDetailsComments/UpdateCommentList.js" defer></script>

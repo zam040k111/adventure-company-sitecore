@@ -1,0 +1,41 @@
+﻿@using Adventure.Feature.Navigation.Models
+@using Foundation.ORM.Sitecore.templates.Project.Adventure
+@model Adventure.Feature.Navigation.Models.NavigationComponentViewModel
+<link rel="stylesheet" href="~/Content/Css/Feature/Navigation/NavigationComponent.css" />
+
+
+@if (Model.IsEventDetailsPage)
+{ 
+    <div class = "p-5" id="navigation-component-container">
+        <h4 id = "navigation-component-title">@Model.Title</h4>
+        <div class = "sidebar sidebar-static">
+            @foreach (var eventList in Model.EventLists)
+            {
+                <div>
+                    <a href = "@eventList.Url">@eventList.Name</a>
+                    @if (eventList.Id == Model.CurrentEventList)
+                    {
+                        <div class = "tree-item">
+                            @Html.Partial("EventTree", new EventTreeViewModel
+                       {
+                           EventPages = eventList.Events ?? new List<IEventDetailsPage>(),
+                           CurrentEventPageId = Model.CurrentEventPage
+                       })
+                        </div>
+                    }
+                </div>
+            }
+        </div>
+    </div>
+}
+else
+{
+    if (Sitecore.Context.PageMode.IsExperienceEditorEditing)
+    {
+        <div class="text-danger">This should be placed only on event details page!</div>
+    }
+}
+
+
+
+

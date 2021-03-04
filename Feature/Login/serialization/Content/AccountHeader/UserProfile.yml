@@ -1,0 +1,45 @@
+﻿---
+ID: "0b62861c-348b-4df3-997d-d76dd9b82038"
+Parent: "f8243557-b87d-4f21-b734-16276de008e9"
+Template: "5e978811-1e01-4cca-91a5-e1190a2ece06"
+Path: /sitecore/content/Adventure/Home/AccountHeader/UserProfile
+DB: master
+SharedFields:
+- ID: "f1a1fe9e-a60c-4ddb-a3a0-bb5b29fe732e"
+  Hint: __Renderings
+  Type: layout
+  Value: |
+    <r>
+      <d
+        id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}"
+        l="{682DA97E-290B-4C97-83D4-C11EB294A915}" />
+    </r>
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "04bf00db-f5fb-41f7-8ab7-22408372a981"
+      Hint: __Final Renderings
+      Type: Layout
+      Value: |
+        <r xmlns:p="p" xmlns:s="s"
+          p:p="1"
+          s:xsd="http://www.w3.org/2001/XMLSchema">
+          <d
+            id="{FE5D7FDF-89C0-4D99-9AA3-B5FBD009C9F3}">
+            <r
+              uid="{4F6995BD-44FA-4D92-8E71-620E582E7084}"
+              p:before="*"
+              s:id="{9E7C751E-C260-40E7-B62D-018A1EE603BF}"
+              s:ph="main" />
+            <r
+              uid="{5E1D4F5F-79B9-47E2-856B-D4D7D63A7E74}"
+              p:after="*[1=2]"
+              s:id="{82F2BF42-9EA3-40B3-AFBA-FA602C0BF59F}"
+              s:ph="header" />
+          </d>
+        </r>
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T161219Z

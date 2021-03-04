@@ -1,0 +1,19 @@
+﻿@model Adventure.Feature.Navigation.Models.EventTreeViewModel
+
+@if (Model != null)
+{
+    foreach (var eventPage in Model.EventPages)
+    {
+        if (!eventPage.ExcludeFromNavigation)
+        {
+            if (eventPage.Id == Model.CurrentEventPageId)
+            {
+                <div class = "pl-3 font-weight-bold">@eventPage.Title</div>
+            }
+            else
+            {
+                <div class = "pl-3"><a href = "@eventPage.Url">@eventPage.Title</a></div>
+            }
+        }
+    }
+}

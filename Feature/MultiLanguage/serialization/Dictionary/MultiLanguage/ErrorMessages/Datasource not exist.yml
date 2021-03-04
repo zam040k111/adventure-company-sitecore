@@ -1,0 +1,22 @@
+﻿---
+ID: "4ff5d776-3cfd-403c-aa02-2cc524394dff"
+Parent: "49034aab-76c5-4c32-a9f7-ef4ffb681fe8"
+Template: "6d1cd897-1936-4a3a-a511-289a94c2a7b1"
+Path: /sitecore/system/Dictionary/Feature/MultiLanguage/ErrorMessages/Datasource not exist
+DB: master
+SharedFields:
+- ID: "580c75a8-c01a-4580-83cb-987776ceb3af"
+  Hint: Key
+  Value: Feature.MultiLanguage.ErrorMessages.Datasource not exist
+Languages:
+- Language: en
+  Fields:
+  - ID: "2ba3454a-9a9c-4cdf-a9f8-107fd484eb6e"
+    Hint: Phrase
+    Value: Datasource item is not assigned for language selector
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T162008Z

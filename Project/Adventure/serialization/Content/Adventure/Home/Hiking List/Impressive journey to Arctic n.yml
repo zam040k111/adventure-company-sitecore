@@ -1,0 +1,75 @@
+﻿---
+ID: "852fa06f-7ca5-4e34-bb26-4038f3001b3b"
+Parent: "90782f0b-6678-452d-a295-a102f7571dfd"
+Template: "72b40e48-a2b6-4ddf-be66-ad0911f53f75"
+Path: /sitecore/content/Adventure/Home/Hiking List/Impressive journey to Arctic n1551792779
+DB: master
+SharedFields:
+- ID: "b0a67b2a-8b07-4e0b-8809-69f751709806"
+  Hint: __Tracking
+  Type: Tracking
+  Value: |
+    <tracking>
+      <profile
+        id="0cad9a95-b252-45ab-91b1-caff25c83a07"
+        name="Event Details Type"
+        presets="hiker|100||">
+        <key
+          name="Biking"
+          value="0" />
+        <key
+          name="Climbing"
+          value="0" />
+        <key
+          name="Hiking"
+          value="10" />
+      </profile>
+      <event
+        id="{F2ABC715-4EE1-4985-B46B-CA6A2AFA0A59}"
+        name="Hike Page Visited" />
+    </tracking>
+- ID: "ba3f86a2-4a1c-4d78-b63d-91c2779c1b5e"
+  Hint: __Sortorder
+  Value: 350
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "23a213e8-4b53-4e63-8ca6-309d0e88db5a"
+      Hint: StartDate
+      Value: 20210128T140814Z
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210125T140814Z
+    - ID: "3986d092-0659-41f4-9d38-072639a93098"
+      Hint: ButtonText
+      Value: Submit Forward Faster
+    - ID: "50911beb-2fa0-4b2f-bb02-7c014fa793f2"
+      Hint: Title
+      Value: Impressive journey to Arctic
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\Anonymous
+    - ID: "7b440603-9dc7-45a4-9935-94ea995e005a"
+      Hint: ShortDescription
+      Value: "Everyone should rest at least once a year. Paris is a political, administrative and cultural centre of the country. Hotel Karpaty. The hotel has 257 rooms of various categories: economy, standard, two-room standard, 3-local economy, 4-local economy, comfort, junior suites and suites."
+    - ID: "9bdeb640-bb42-456c-a7e9-6fcf76ba9f93"
+      Hint: Difficulty
+      Value: 6
+    - ID: "a0cff737-944a-43ef-9fa8-810d54a7c876"
+      Hint: Description
+      Value: |
+        Travel is always something new and interesting, it is a meeting with new people, cities and sights. Travel always gives new emotions and impressions, it allows you to escape from everyday life and plunge into a new other life, at least for a few days.
+         Paris is a political, administrative and cultural centre of the country. The University of Paris or Sorbonne, founded in the 12th century, is one of its original medieval colleges and one of the best and most prestigious universities in the world. Paris is recognized as the educational centre of the country and the major part of schools and universities is located there. The population of the city is multifarious: Europeans, black people, Arabs. Paris is a motherland of numerous magazines, newspapers and publications.
+         A modern and elegant hotel, recently renovated and refurbished, ideal for both business and leisure travelers, it contains 34 cozy rooms and is a 5-minute walk from the train station. All rooms are equipped with modern showers and toilets, TV with satellite channels, W-Lan, radio, telephone, safe. For a successful start to the day, guests are offered a buffet breakfast. In the immediate vicinity of the hotel there is the "old town" with "the longest bar in the world", the Royal Alley, musicals and theaters, exhibitions and the international airport, which can be easily reached by public transport.
+    - ID: "c1b4d955-3944-4eca-a1c3-0cdd2fdc9926"
+      Hint: Tags
+      Type: Treelist
+      Value: |
+        {126D7A47-E537-45EB-9DD3-3D18725378A2}
+        {5C13C6D2-F043-4277-85AC-428AF62DA3CF}
+    - ID: "d0b7c6a1-7c82-4f01-9da7-48a825e667ee"
+      Hint: EndDate
+      Value: 20210323T140814Z

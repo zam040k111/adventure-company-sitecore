@@ -1,0 +1,28 @@
+﻿---
+ID: "c3b1e13d-74a2-4066-8c96-6fcf9780eade"
+Parent: "971bdc6e-7a59-4658-a263-efd7d7b0f65c"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/Mailing/Subscription
+DB: master
+SharedFields:
+- ID: "b5b27af1-25ef-405c-87ce-369b3a004016"
+  Hint: Datasource Location
+  Value: "{3524FBD6-E6DA-410E-8DE4-98C492289E34}"
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: Subscription
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Adventure.Feature.Mailing.Controllers.MailingController, Adventure.Feature.Mailing
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210224T122115Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

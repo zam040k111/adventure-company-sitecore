@@ -1,0 +1,21 @@
+﻿@using Adventure.Feature.Login.Constants
+@using Adventure.Foundation.Common.Helpers
+@model Feature.Login.ILoginPage
+
+<div class="container py-3">
+	<div class="text-danger d-none" id="login-result-message"></div>
+	<input type="hidden" id="redirection" value="@Html.Sitecore().TranslateLabel(DictionaryKeys.AfterLogin.RedirectTo)" />
+
+	<div id="login-input-list">
+		<label for="userName">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.UserName)</label>
+		<input type="text" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.UserName)" id="userName" />
+		<label for="password">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Password)</label>
+		<input type="password" class="form-control mb-3" placeholder="@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.Password)" id="password" />
+		<input type="checkbox" id="still-logged-in" name="still-logged-in" />
+		<label for="still-logged-in">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.StillLoggedIn)</label>
+		<hr />
+		<button id="login-user-button" class="btn btn-dark" type="submit">@Html.Sitecore().TranslateLabel(DictionaryKeys.Labels.SubmitButtonText)</button>
+	</div>
+</div>
+
+<script src="~/Scripts/Adventure.Feature.Login/Login.js" defer></script>

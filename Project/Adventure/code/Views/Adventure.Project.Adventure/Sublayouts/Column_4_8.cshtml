@@ -1,0 +1,16 @@
+﻿@using Sitecore.Mvc
+@using Sitecore.Mvc.Analytics.Extensions
+@using Sitecore.Mvc.Presentation
+@model RenderingModel
+@{
+    Layout = null;
+}
+
+    <div class="row">
+        <div class="col-4">
+            @Html.Sitecore().DynamicPlaceholder("content-4-8_4")
+        </div>
+        <div class="col-8">
+            @Html.Sitecore().DynamicPlaceholder("content-4-8_8")
+        </div>
+    </div>

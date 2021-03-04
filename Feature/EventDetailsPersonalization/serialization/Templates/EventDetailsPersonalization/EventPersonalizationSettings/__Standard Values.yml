@@ -1,0 +1,28 @@
+﻿---
+ID: "f7d9ee00-2768-44ce-9d23-81370d127d4a"
+Parent: "671e39fe-45a0-4d0d-b159-d3d54f837b4c"
+Template: "671e39fe-45a0-4d0d-b159-d3d54f837b4c"
+Path: /sitecore/templates/Feature/EventDetailsPersonalization/EventPersonalizationSettings/__Standard Values
+DB: master
+SharedFields:
+- ID: "06d5295c-ed2f-4a54-9bf2-26228d113318"
+  Hint: __Icon
+  Value: People/32x32/user1_view.png
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210219T172121Z
+    - ID: "3811438b-0e57-4681-97a0-bf694956e48c"
+      Hint: Point per visit
+      Value: 1
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "e9e009a7-40cb-45b6-a941-7dd1d09707c6"
+      Hint: Points for profile
+      Value: 10

@@ -1,0 +1,24 @@
+﻿---
+ID: "6f678e94-15df-4e70-98d4-927ff054e5d6"
+Parent: "e07a7756-d786-4582-910b-f5265103f472"
+Template: "2a3e91a0-7987-44b5-ab34-35c2d9de83b9"
+Path: /sitecore/layout/Renderings/Feature/MultiLanguage/Language Selector
+DB: master
+SharedFields:
+- ID: "5a14936f-2100-4541-b700-2f122e88f3f8"
+  Hint: Data source
+  Value: /sitecore/content/Components/Multi Language/Language Selector Settings
+- ID: "ded9e431-3604-4921-a4b3-a6ec7636a5b6"
+  Hint: Controller Action
+  Value: LanguageSelector
+- ID: "e64ad073-dfcc-4d20-8c0b-fe5aa6226cd7"
+  Hint: Controller
+  Value: Adventure.Feature.MultiLanguage.Controllers.MultiLanguageController, Adventure.Feature.MultiLanguage
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210111T130821Z

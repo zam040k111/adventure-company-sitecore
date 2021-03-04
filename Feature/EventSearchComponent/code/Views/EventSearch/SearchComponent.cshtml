@@ -1,0 +1,74 @@
+﻿@model Adventure.Feature.EventSearchComponent.Models.EventListViewModel
+<link rel="stylesheet" href="~/Content/Css/Feature/EventSearchComponent/Event list.css" />
+<script src="/Scripts/Adventure.Feature.EventSearchComponent/bootstrap-tagsinput.js"></script>
+
+<div class="bg-light">
+
+	<div class="container" id="search-form">
+		<h4>Search by</h4>
+		<div>
+			<label for="EventName">Event name</label>
+			<input type="text" id="EventName" class="form-control" />
+		</div>
+
+		<div>
+			<label for="Difficulty">Difficulty level</label>
+			<input type="number" id="Difficulty" class="form-control" />
+		</div>
+
+		<div>
+			<label for="StartDate">Start date</label>
+			<input type="date" id="StartDate" class="form-control" />
+		</div>
+		<input type="hidden" id="PageNumber" value="@Model.PageNumber" />
+
+		<div>
+			<label>Tags</label>
+			<br/>
+			<label for="tags">All tags</label>
+			<div class="bootstrap-tagsinput" id="tags">
+				@foreach (var i in Model.AllTags)
+				{
+					<span class="tag label label-info tag-item" id="@i.Id.ToString("N")">@i.TagName</span>
+				}
+			</div>
+			
+			<br/>
+			<label for="tag-container">Selected tags</label>
+			<div class="bootstrap-tagsinput" id="tag-container">
+			</div>
+		</div>
+
+		<h4>Order by</h4>
+		<select class="selectpicker form-control" id="OrderBy">
+			<option value="name">Event name</option>
+			<option value="difficulty">Difficulty level</option>
+			<option value="date">Start date</option>
+		</select>
+
+		<br />
+
+		<button class="btn btn-dark my-3" id="search-events-button">Find</button>
+	</div>
+
+	<div class="pl-4 container mb-5" id="events-container">
+	</div>
+
+	<div class="row mx-5">
+		<div class="col-md-2">
+			<select class="selectpicker form-control" id="PageSize">
+				@foreach (var option in Model.PageSizeOptions)
+				{
+					<option value="@option">@option</option>
+				}
+			</select>
+		</div>
+		<div class="col-md-10">
+			<div class="btn-group" id="pagination-items-container">
+			</div>
+		</div>
+	</div>
+
+</div>
+
+<script src="~/Scripts/Adventure.Feature.EventSearchComponent/SearchEvents.js" defer></script>

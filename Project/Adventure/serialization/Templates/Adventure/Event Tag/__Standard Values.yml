@@ -1,0 +1,21 @@
+﻿---
+ID: "ccad61a4-0c7b-48d8-8f34-cab0c038367c"
+Parent: "5b506a31-71fd-412d-8944-4e6059c2461e"
+Template: "5b506a31-71fd-412d-8944-4e6059c2461e"
+Path: /sitecore/templates/Project/Adventure/Event Tag/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210118T071710Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "c8ccee70-196f-4f8d-ae74-36f81ca43268"
+      Hint: Tag Name
+      Value: $name

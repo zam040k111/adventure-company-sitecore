@@ -1,0 +1,18 @@
+﻿---
+ID: "033169f6-0688-4bcd-a433-37b6188a7480"
+Parent: "18666dcc-8cca-496c-8948-eca42d73b2de"
+Template: "a87a00b1-e6db-45ab-8b54-636fec3b5523"
+Path: /sitecore/system/Settings/Validation Rules/Field Rules/Feature/EventDetailsComments
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20201118T155437Z
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin

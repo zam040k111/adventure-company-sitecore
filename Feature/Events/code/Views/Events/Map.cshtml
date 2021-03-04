@@ -1,0 +1,10 @@
+﻿@using System.Collections
+@using Glass.Mapper.Sc.Web.Mvc
+
+@model Feature.Events.IGoogleMap
+
+<iframe width="600"
+        height="450"
+        frameborder="0" style="border:0"
+        src="https://www.google.com/maps/embed/v1/directions?origin=@Model.StartLocation&destination=@Model.FinishLocation&key=AIzaSyCZALSNsnCTzJCFa9xz9XFFMSTrrZaA74g" allowfullscreen>
+</iframe>

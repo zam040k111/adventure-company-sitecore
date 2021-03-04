@@ -1,0 +1,23 @@
+﻿---
+ID: "98f5efa9-2976-40f7-9186-8cd9a3ffd336"
+Parent: "f9f6de61-ba86-41f3-b10b-036d2aa0438f"
+Template: "4b7e2da9-de43-4c83-88c3-02f042031d04"
+Path: /sitecore/system/Workflows/Event Details Workflow/Approved
+DB: master
+SharedFields:
+- ID: "fb8abc73-7acf-45a0-898c-d3ccb889c3ee"
+  Hint: Final
+  Type: Checkbox
+  Value: 1
+Languages:
+- Language: en
+  Fields:
+  - ID: "8c980a06-4059-4939-9c6f-a10f751ceb64"
+    Hint: Description
+    Value: Tells that an event is approved by an admin
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210211T120346Z

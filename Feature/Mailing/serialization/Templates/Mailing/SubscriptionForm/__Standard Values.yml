@@ -1,0 +1,33 @@
+﻿---
+ID: "8dac4340-ac00-46cb-9533-a2fa47610e2d"
+Parent: "462bbb17-0ca9-4436-ad24-b58d3b12fa18"
+Template: "462bbb17-0ca9-4436-ad24-b58d3b12fa18"
+Path: /sitecore/templates/Feature/Mailing/SubscriptionForm/__Standard Values
+DB: master
+Languages:
+- Language: en
+  Versions:
+  - Version: 1
+    Fields:
+    - ID: "25bed78c-4957-4165-998a-ca1b52f67497"
+      Hint: __Created
+      Value: 20210302T123605Z
+    - ID: "50df15ad-de65-47d4-ab66-64c9d80ad8c1"
+      Hint: Success
+      Value: Success
+    - ID: "5dd74568-4d4b-44c1-b513-0af5f4cda34f"
+      Hint: __Created by
+      Value: |
+        sitecore\admin
+    - ID: "80814aa2-1515-4049-9b6b-2953bb29864d"
+      Hint: Fail
+      Value: Fail
+    - ID: "9a1d5af2-410c-40ad-aa3b-e165fa2dfd7b"
+      Hint: SubscriptionEmail
+      Value: Your Email for subscription
+    - ID: "d3de7d1f-17e2-488c-8f44-8e5b447da015"
+      Hint: Subscribe
+      Value: Subscribe
+    - ID: "e0209549-2ed3-474c-9292-4cca782d2c57"
+      Hint: Email
+      Value: Invalid Email address
